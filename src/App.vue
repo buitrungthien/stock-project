@@ -1,25 +1,28 @@
 <template>
-  <div class="container">
-    <app-header></app-header>
-    <div class="row">
-      <div class="col-sm-12">
-        <router-view></router-view>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<app-header></app-header>
+		<div class="row">
+			<div class="col-sm-12">
+				<router-view></router-view>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
 import Header from "./components/Header";
 export default {
-  components: {
-    appHeader: Header
-  }
+	components: {
+		appHeader: Header
+	},
+	created() {
+		this.$store.dispatch("initStocks");
+	}
 };
 </script>
  
 <style>
 body {
-  padding: 30px;
+	padding: 30px;
 }
 </style>
