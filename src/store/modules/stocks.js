@@ -9,13 +9,15 @@ const mutations = {
         state.stocks = stocks;
     },
     'RND_STOCKS'(state) {
-
+        state.stocks.forEach(stock => {
+            stock.price = Math.round(stock.price * (0.5 + Math.random()));
+        });
     }
 };
 
 const actions = {
     buyStock: ({ commit }, order) => {
-        commit();
+        commit('BUY_STOCK', order);
     },
     initStocks: ({ commit }) => {
         commit('SET_STOCKS', stocks);
