@@ -89,3 +89,13 @@ export default {
 };
 </script>
 
+<style>
+.navbar {
+	background-color: #e2d32f;
+}
+.navbar-default .navbar-nav>li>a {
+	color: black;
+}
+</style>
+
+

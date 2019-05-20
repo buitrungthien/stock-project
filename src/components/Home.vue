@@ -1,10 +1,10 @@
 <template>
 	<div>
-		<h1>Trade or View your Portfolio</h1>
-		<h6>You may Save & Load your Data</h6>
-		<h6>Click on 'End Day' to begin a New Day</h6>
+		<h1 class="text-center">Trade or View your Portfolio</h1>
+		<h5 class="text-center">You may Save & Load your Data</h5>
+		<h5 class="text-center">Click on 'End Day' to begin a New Day</h5>
 		<hr>
-		<p>Your Funds: {{funds | currency}}</p>
+		<p class="pull-right">Your Funds: {{funds | currency}}</p>
 	</div>
 </template>
 

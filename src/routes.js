@@ -5,7 +5,9 @@ import Stocks from './components/stocks/Stocks'
 export const routes = [
     {
         path: '/',
-        component: Home 
+        components: {
+            default: Home
+        } 
     },
     {
         path: '/portfolio',

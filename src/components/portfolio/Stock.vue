@@ -54,6 +54,7 @@ export default {
 				quantity: this.quantity
 			};
 			this.placeStockOrder(order);
+			this.quantity = 0;
 		}
 	}
 };
